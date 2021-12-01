@@ -17,11 +17,32 @@ url = 'covid_22_noviembre.csv'
 
 data = pd.read_csv(url)
 
-#1 Número de casos de Contagiados en el País.
+#-----------------------------------------------------------
+#Número de casos de Contagiados en el País.
 num_pais = len(data)
 
-print("Punto 1")
+print(" 1")
 
 print(num_pais)
 
 print() 
+
+num_pais = len(data)
+
+print(" 1")
+
+print(num_pais)
+
+print()
+ 
+#-----------------------------------------------------------
+#Número de Municipios Afectados
+
+num_muni = len(data.groupby('Nombre').size())
+
+print("2")
+
+print(num_muni)
+
+print() 
+
